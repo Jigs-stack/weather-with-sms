@@ -33,7 +33,7 @@ def check_rain(forecast_data):
                 print("It wont rain today")
 
 
-messages = "It might rain later today! Please bring a coat or umbrella"
+message = "It might rain later today! Please don't forget to bring a coat or umbrella"
 numbers = ("09304525423", "09690779831")
 
 
@@ -68,4 +68,4 @@ except requests.exceptions.JSONDecodeError as err:
     print(err.response.json)
 else:
     if check_rain:
-        send_message(message=messages, number=numbers)
+        send_message(message=message, number=numbers)
