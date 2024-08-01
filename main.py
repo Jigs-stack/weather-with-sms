@@ -34,7 +34,7 @@ def check_rain(forecast_data):
 
 
 message = "It might rain later today! Please don't forget to bring a coat or umbrella"
-numbers = ("09304525423", "09690779831")
+# numbers = put your phone numbers in here
 
 
 def send_message(message, number):
@@ -53,6 +53,7 @@ def send_message(message, number):
     except err:
         print("something went wrong", err)
     else:
+        print(path)  # get the output link
         print("SMS sent!")
 
 
